@@ -1,4 +1,4 @@
-const scriptEl = document.querySelector("script[src='/Users/viuneeva/Work/cpp-compliance/cpp-compliance-script/index.js']");
+const scriptEl = document.querySelector("script[src='https://cpp-compliance-script.vercel.app']");
 const content = `
     <div id="gocardless-legal-notice" style="max-width: 564px">
         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400px; line-height: 22px; color: #000;">
