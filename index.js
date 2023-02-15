@@ -54,6 +54,6 @@ function render(container) {
         });    
 }
 
-document.gocardlessCompliance = {
+window.gocardlessCompliance = {
     render,
 }
