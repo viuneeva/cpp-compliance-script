@@ -1,4 +1,5 @@
 const scriptEl = document.querySelector("script[src='https://cpp-compliance-script.vercel.app']");
+const containerEl = document.querySelector("#gocardless_cpp_compliance");
 const content = `
     <div id="gocardless-legal-notice" style="max-width: 564px">
         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400px; line-height: 22px; color: #000;">
@@ -16,12 +17,12 @@ const content = `
         </svg>
     </div>`
 
-const parentEl = scriptEl.parentNode;
+const parentEl = containerEl || scriptEl.parentNode;
 const contentEl = document.createElement("div");
 contentEl.id = "gocardless-cpp-compliance";
 contentEl.innerHTML = content;
 
-parentEl.insertBefore(contentEl, scriptEl);
+parentEl.insertBefore(contentEl, null);
 
 async function log() {
     const logRecord = new Parse.Object("logs");
